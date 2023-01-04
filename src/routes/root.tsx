@@ -1,13 +1,15 @@
 import { Outlet } from 'react-router-dom';
 import { Navbar } from '../components/Navbar';
+import { Container } from 'react-bootstrap';
+import { ShoppingCartProvider } from '../context/ShoppingCartContext';
 
 export function Root() {
   return (
-    <>
+    <ShoppingCartProvider>
       <Navbar />
-      <div className="container mx-auto mt-5">
+      <Container className="mb-4">
         <Outlet />
-      </div>
-    </>
+      </Container>
+    </ShoppingCartProvider>
   );
 }
