@@ -1,1 +1,4 @@
-# shopping-cart-component
+# Shopping-Cart-Component
+
+## Project Description
+
